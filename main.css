@@ -57,7 +57,7 @@
   }
   
   .sidebar .menu li a:hover {
-    color: #DE1C6C;
+    color: #f26d53;
   }
  
   .social-icon {
@@ -78,7 +78,7 @@
   }
 
   .social-icon li a:hover {
-    color:red;
+    color:#f26d53;
   }
 
   .social-links {
@@ -104,7 +104,7 @@
   }
 
   .social-links li a:hover {
-    color: red;
+    color: #f26d53;
 }
 
   .social-icon li a {
@@ -116,7 +116,7 @@
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    transition: .5s;
+    transition: .2s;
   }
   
   /* Main */
@@ -136,12 +136,15 @@
   }
   
   .main-section .header {
-    
+    display: block;
+    position: absolute;
   }
   
   .main-section .header h1 {
-    color: red;
-    
+    color: #f26d53;
+    padding: 50px;
+    font-size: 65px;
+    margin-top: 250px;
   }
 
   
@@ -280,93 +283,20 @@ footer .footer-btn a:hover {
   
 
   
-  /* Phones */
-  @media only screen and (max-width: 767px) {
-    #experience .skills-container {
-      grid-template-columns: 1fr 1fr;
-    }
-   
-   #experience .large-title {
-    font-size: 2.5rem;
-    left: 0;
-  }
-   
+  /* Tablets */
+  @media screen and (max-width: 768px) {
+        
   }
 
-    /* Media Queries */
-    @media screen and (max-width: 375px) {
-  
-        .main-section .header {
-          margin: 0;
-          padding: 0;
-          font-size: 10px;
-        }
+  /* Phones */
+  @media screen and (max-width: 375px) {
+    .sidebar {
+      display: none;
+    }
+    .main-container {
+      margin-left: 0;
+    }
+        
+  }
       
-        .menu-icon {
-          right: 2px;
-          display: block;
-        }
       
-        .sidebar .active {
-         width: 80%;
-        }
-      
-        .sidebar img {
-          display: none;
-        }
-      
-        .about-wrapper .about-section {
-          width: 100%;
-          justify-content: center;
-          margin: 0;
-          padding: 0;
-        }
-      
-        .projects-wrapper .main-projects-container {
-          margin: 0;
-        }
-      
-        .main-projects-container .container {
-          width: 100% !important;
-          padding: 0;
-        }
-      
-        .testimonial-col {
-          max-width: 100%!important;
-      
-        }
-      }
-      
-      @media screen and (max-width: 768px) {
-        .main-section .header h1 {
-          font-size: 25px;
-      }
-      
-        .about-wrapper .grid-item{
-          width: 100%;
-        }
-      
-      .main-projects-container  {
-        margin: 0!important;
-      }
-      
-      .testimonial-col {
-        flex: 100%;
-        max-width: 80%;
-        display: inline-table;
-      }
-      }
-      
-      h1.title {
-        padding: 40px;
-        color: #9B9B9B;
-        font-size: 45px;
-      }
-      h1.title:after {
-        content: "";
-          display: block;
-          margin: 0 auto;
-          width: 40px;
-          padding-top: 20px;
-          border-bottom: solid 5px #04C2C9;
-      }
