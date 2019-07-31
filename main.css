@@ -3,12 +3,16 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .main-container {
     margin-left: 160px;
   }
 
-  /* Side Bar */    
+  /* Side Bar */
+  .mobile-menu {
+      display: none;
+  }
+
   .sidebar {
     position: fixed;
     top: 0;
@@ -22,7 +26,7 @@
     border-right: solid 1px #e7e7e7;
     margin: auto;
   }
-  
+
   .sidebar a {
     text-decoration: none;
   }
@@ -34,16 +38,16 @@
     font-weight: 100;
     border-bottom: solid 6px black;
   }
-  
+
   .sidebar .menu {
     margin-top: 30vh;
-    
+
   }
 
   .sidebar .menu li {
     list-style: none;
   }
-  
+
   .sidebar .menu li a {
     margin: auto;
     display: block;
@@ -55,11 +59,11 @@
     text-decoration: none;
     font-family: 'Quattrocento', serif;
   }
-  
+
   .sidebar .menu li a:hover {
     color: #f26d53;
   }
- 
+
   .social-icon {
     margin: 0;
     padding: 0;
@@ -71,7 +75,7 @@
     padding: 0 50px;
     box-sizing: border-box;
   }
-  
+
   .social-icon li {
     width: 33%;
     list-style: none;
@@ -92,7 +96,7 @@
     padding: 0 30px;
     box-sizing: border-box;
   }
-  
+
   .social-links li {
     font-size: 13px;
     padding: 2px;
@@ -118,7 +122,7 @@
     border-radius: 50%;
     transition: .2s;
   }
-  
+
   /* Main */
   .main-section {
     background-image: url(https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
@@ -134,12 +138,12 @@
     font-size: 20px;
     font-weight: bold;
   }
-  
+
   .main-section .header {
     display: block;
     position: absolute;
   }
-  
+
   .main-section .header h1 {
     color: #f26d53;
     padding: 50px;
@@ -147,35 +151,30 @@
     margin-top: 250px;
   }
 
-  
+
   /* About */
   .about-wrapper {
-    width: 100%;  
+    width: 100%;
     position: relative;
   }
-  
+
   .about-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color:rgb(41, 41, 41);
     height: 100vh;
   }
-  
+
   .about-section .grid-item {
     font-size: 15px;
     display: block;
     width: 100%;
     margin: auto;
   }
-  
+
   .about-section .grid-item .info {
     padding: 90px 100px 0 100px;
     font-size: 20px;
-  }
-
-  .about-section .grid-item .info h2, h1 {
-    
-    
   }
 
   .about-section .grid-item img {
@@ -187,11 +186,11 @@
     width: 100%;
     height: 100vh;
   }
-  
+
   .about-section .grid-item h2 {
     padding: 15px 0;
   }
- 
+
 
   /* experience */
   #experience {
@@ -202,7 +201,7 @@
   #experience  .title{
     margin: 0 auto;
   }
-  
+
   #experience .title h1 {
     padding: 10px;
     position: relative;
@@ -211,7 +210,7 @@
     font-weight: 500;
     color: #16171b;
    }
-  
+
   #experience .skills-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -219,27 +218,27 @@
     grid-row-gap: 50px;
     padding: 50px;
   }
-  
+
   #experience .skills-container .skill {
     display: block;
     text-align: center;
   }
-  
+
   #experience .skills-container .skill .skill-icon{
     filter: grayscale(100%);
     transition: all .3s ease-in-out;
   }
-  
+
   #experience .skills-container .skill:hover .skill-icon{
     filter: grayscale(0);
     cursor: pointer;
     transform: scale(1.5);
   }
-  
+
   #experience .skills-container .skill .skill-icon img {
     width: 120px;
     height: 100px;
-    
+
   }
 
    /* Footer */
@@ -280,36 +279,116 @@ footer .footer-btn a:hover {
   text-decoration: none;
   padding: 15px;
 }
-  
 
-  
+
+
   /* Tablets */
   @media screen and (max-width: 768px) {
-  .sidebar {
+    .mobile-menu {
+      width: 100%;
+      height: 50px;
+      display: block;
+      position: fixed;
+      background-color: white;
+      z-index: 2;
+    }
+
+    .mobile-menu i {
+      float: right;
+      padding: 7px;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    .mobile-menu a {
+      text-align: center;
+      font-family: 'Permanent Marker', cursive;
+      color: black;
+      font-size: 22px;
+      font-weight: 100;
+      border-bottom: solid 6px black;
+    }
+
+   .sidebar.active {
+    width: 100%;
+    display: block;
+    left: 0;
+    position: fixed;
+
+  }
+
+    .sidebar {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    transition: .5s;
+    text-align: center;
+    z-index: 2;
+    margin-top: 50px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+    }
+
+    .sidebar a h2 {
       display: none;
     }
 
-    .main-section {
-      background-position: center center;
+    .social-icon {
+      bottom: 160px;
+      left: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
-  .main-container {
+    .main-container {
       margin-left: 0;
     }
 
     .main-section .header h1 {
       padding: 15px;
     }
+    .about-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      color: rgb(41, 41, 41);
+      height: 140vh;
+    }
+
+    .about-section .grid-item {
+      position: block;
+   }
+
+   .about-section .grid-item .info a {
+     padding-top: 25px;
+     color: black;
+     display: block;
+     font-weight: 600;
+     font-size: 22px;
+     cursor: pointer;
+   }
+
+   .about-section .grid-item .last-item {
+    width: 100%;
+  }
+  
     .about-section .grid-item {
       position: block;
       display: flex;
   }
 
-  .about-section .grid-item .info {
+    .about-section .grid-item .info {
       padding: 10px;
       font-size: 20px;
   }
-  
+
+  .about-section .grid-item img:nth-child(2) {
+    display: none;
+  }
 
   .about-section .grid-item .last-item {
     width: 100%;
@@ -323,7 +402,7 @@ footer .footer-btn a:hover {
       grid-row-gap: 10px;
       padding: 10px;
     }
-    
+
   footer .footer-btn {
       display: inline-block;
       text-transform: uppercase;
@@ -334,29 +413,14 @@ footer .footer-btn a:hover {
     footer .footer-text {
       padding: 10px;
     }
-    
-    .about-section {
-      display: grid;
-      grid-template-columns: 1fr;
-      color: rgb(41, 41, 41);
-      height: 100vh;
-  }
-
-    .about-section .grid-item {
-      position: block;
-   }
-
-   .about-section .grid-item .last-item {
-    width: 100%;
-}
 
 
   }
 
   /* Phones */
   @media screen and (max-width: 414px) {
-   
+    .social-links {
+      bottom: 70px;
+  }
 
   }
-      
-      

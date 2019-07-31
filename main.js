@@ -1,16 +1,22 @@
 $(document).ready(function() {
 
     // Menu Slide //
-   
-  
+    $(".mobile-btn").click(function() {
+     $(".mobile-btn").toggleClass("active")
+   })
+
+   $(".mobile-btn").click(function() {
+     $(".sidebar").toggleClass("active")
+   })
+
   // smooth scroll //
     $("a").on('click', function(event) {
-  
+
       if (this.hash !== "") {
         event.preventDefault();
-  
+
         var hash = this.hash;
-  
+
         $('html, body').animate({
           scrollTop: $(hash).offset().top
         }, 800, function(){
@@ -20,7 +26,7 @@ $(document).ready(function() {
     });
     //
   });
-  
+
   var typed = new Typed(".type", {
     strings: ["Front-End Developer...",
               "Back-End Developer...",
@@ -29,7 +35,6 @@ $(document).ready(function() {
     backSpeed: 20,
     loop: true
   });
-  
+
   // Resume Download //
   $(".resume-btn").attr('title', 'DOWNLOAD RESUME');
-  
