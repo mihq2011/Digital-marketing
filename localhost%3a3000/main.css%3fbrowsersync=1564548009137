@@ -288,32 +288,18 @@ footer .footer-btn a:hover {
   .sidebar {
       display: none;
     }
-
-    .main-section {
-      background-position: center center;
-    }
-
   .main-container {
       margin-left: 0;
     }
-
-    .main-section .header h1 {
-      padding: 15px;
-    }
-    .about-section .grid-item {
-      position: block;
-      display: flex;
-  }
 
   .about-section .grid-item .info {
       padding: 10px;
       font-size: 20px;
   }
-  
 
   .about-section .grid-item .last-item {
     width: 100%;
-    height: 500px;
+    height: 350px;
 }
 
   #experience .skills-container {
@@ -339,7 +325,7 @@ footer .footer-btn a:hover {
       display: grid;
       grid-template-columns: 1fr;
       color: rgb(41, 41, 41);
-      height: 100vh;
+      /* height: 100vh; */
   }
 
     .about-section .grid-item {
