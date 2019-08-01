@@ -1,0 +1,32 @@
+.top-section {
+    background-color: rgb(255, 243, 228);
+    height: 70vh;
+    text-align: left;
+}
+
+.top-section .top-container {
+    padding: 50px;
+    width: 40%;
+}
+
+.top-section h4 {
+    font-family: 'Quattrocento', serif;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 18px;
+    color: #f26d53;
+    padding: 25px 0;
+
+}
+
+.top-section h2 {
+    font-size: 50px;
+    padding: 25px 100px 0 0;
+    letter-spacing: 3px;
+}
+
+.top-section p {
+    font-size: 18px;
+    padding: 25px 0;
+    letter-spacing: 2px;
+}
