@@ -5,35 +5,35 @@
 
 .top-section .top-container {
     padding: 50px;
-    width: 40%;
+    width: 60%;
 }
 
 .top-section h4 {
     font-family: 'Quattrocento', serif;
     text-transform: uppercase;
     letter-spacing: 7px;
-    font-size: 18px;
+    font-size: 20px;
     color: #f26d53;
-    padding: 25px 0;
-
+    padding: 15px 0;
 }
 
 .top-section h2 {
-    font-size: 50px;
-    padding: 25px 100px 0 0;
+    font-size: 65px;
+    padding: 15px 100px 0 0;
     letter-spacing: 3px;
 }
 
 .top-section p {
-    font-size: 18px;
+    font-size: 22px;
     padding: 25px 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 section.gallery {
   position: relative;
   margin: 0;
   padding: 0;
+  
 
 }
 
@@ -43,22 +43,23 @@ section.gallery .gallery-container {
   grid-column-gap: 0;
   grid-row-gap: 0;
   text-align: center;
-
+ 
 
 }
 section.gallery .gallery-container .gallery-item {
   position: relative;
   text-align: center;
-  color: white;
-  -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
-          filter: grayscale(100%) brightness(85%) sepia(65%) hue-rotate(-405deg) saturate(300%) contrast(0.7);
-  z-index: 1;
+ 
 }
 
 
 section.gallery .gallery-container .gallery-item img {
   width: 100%;
-
+  height: 350px;
+  -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+  filter: grayscale(100%) brightness(85%) sepia(65%) hue-rotate(-405deg) saturate(300%) contrast(0.7);
+  
+  
 
 }
 
@@ -67,6 +68,55 @@ section.gallery .gallery-container .gallery-item h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-filter: invert(40%) grayscale(0) brightness(0) sepia(0) hue-rotate(-50deg) saturate(0) contrast(2);
-      filter: grayscale(100%) brightness(85%) sepia(65%) hue-rotate(-405deg) saturate(300%) contrast(0);
+  color: white;
+  font-weight:600;
+  font-size: 35px;
+  display: inline-table;
+  width: 100%;
 }
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  
+  .top-section .top-container {
+    width: 100%; 
+}
+  
+
+  section.gallery .gallery-container {
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* Phones */
+@media screen and (max-width: 414px) {
+
+  section.gallery .gallery-container {
+    grid-template-columns: 1fr;
+}
+
+.top-section .top-container {
+  padding: 45px 0 0 10px;
+}
+
+.top-section h2 {
+  font-size: 35px;
+  padding: 0;
+  letter-spacing: 1px;
+}
+footer {
+  text-align: center;
+}
+
+footer .footer-text {
+  display: none;
+}
+
+footer .footer-btn {
+  float: none;
+  padding: 65px 0 0 0;
+}
+
+}
+
+
+
