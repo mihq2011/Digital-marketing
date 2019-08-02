@@ -314,6 +314,7 @@ footer .footer-btn a:hover {
     display: block;
     left: 0;
     position: fixed;
+    height: 100vh;
 
   }
 
@@ -338,11 +339,19 @@ footer .footer-btn a:hover {
       display: none;
     }
 
+    .social-links {
+      bottom: 90px;
+    }
+
     .social-icon {
-      bottom: 160px;
-      left: 50px;
-      display: grid;
+      bottom: 175px;
+      left: 36%;
+      display: inline-flex;
       grid-template-columns: 1fr 1fr;
+    }
+
+    .social-icon li {
+      width: 10%;
     }
 
     .main-container {
@@ -375,7 +384,7 @@ footer .footer-btn a:hover {
    .about-section .grid-item .last-item {
     width: 100%;
   }
-  
+
     .about-section .grid-item {
       position: block;
       display: flex;
@@ -421,6 +430,10 @@ footer .footer-btn a:hover {
   @media screen and (max-width: 414px) {
     .social-links {
       bottom: 70px;
+  }
+
+  .social-icon {
+    left:27%;
   }
 
   }
