@@ -429,11 +429,29 @@ footer .footer-btn a:hover {
   /* Phones */
   @media screen and (max-width: 414px) {
     .social-links {
-      bottom: 70px;
+      bottom: 130px;
   }
 
   .social-icon {
-    left:27%;
+    left:26%;
+    bottom: 210px;
   }
+
+  .sidebar .menu {
+    margin-top: 15vh;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .footer-text {
+  display: none;
+}
+
+footer .footer-btn {
+  float: none;
+  padding: 65px 0 0 0;
+}
 
   }
