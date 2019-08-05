@@ -27,14 +27,3 @@ $(document).ready(function() {
     //
   });
 
-  var typed = new Typed(".type", {
-    strings: ["Front-End Developer...",
-              "Back-End Developer...",
-              "Web Designer..."],
-    typeSpeed: 40,
-    backSpeed: 20,
-    loop: true
-  });
-
-  // Resume Download //
-  $(".resume-btn").attr('title', 'DOWNLOAD RESUME');

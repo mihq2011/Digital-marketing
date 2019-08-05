@@ -33,26 +33,29 @@ section.work-gallery .work-gallery-container .gallery-item img {
 section.work-gallery .work-gallery-container .gallery-item:hover img {
   -webkit-filter:  brightness(50%);
   filter: brightness(50%);
+  transition: all .4s ease-in-out;
 }
 
 section.work-gallery .work-gallery-container .gallery-item h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-300%, -300%);
   color: white;
   font-weight:600;
   font-size: 35px;
-  display: inline-table;
   width: 100%;
+  visibility: hidden;
+  overflow: hidden;
   display: none;
-  transition: all 5s ease-in-out;
-  
 }
 
 section.work-gallery .work-gallery-container .gallery-item:hover h2 {
-  display: block;
+  display: inline;
   transform: translate(-50%, -50%);
+  visibility: visible;
+  transition: all .4s ease-in-out;
+  overflow: hidden;
+  
 }
 
 
