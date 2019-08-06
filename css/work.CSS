@@ -44,18 +44,15 @@ section.work-gallery .work-gallery-container .gallery-item h2 {
   font-weight:600;
   font-size: 35px;
   width: 100%;
-  visibility: hidden;
-  overflow: hidden;
   display: none;
+  
 }
 
 section.work-gallery .work-gallery-container .gallery-item:hover h2 {
-  display: inline;
+  display: block;
   transform: translate(-50%, -50%);
   visibility: visible;
   transition: all .4s ease-in-out;
-  overflow: hidden;
-  
 }
 
 

@@ -429,7 +429,7 @@ footer .footer-btn a:hover {
   /* Phones */
   @media screen and (max-width: 414px) {
     .social-links {
-      bottom: 130px;
+      bottom: 15%;
   }
 
   .social-icon {
