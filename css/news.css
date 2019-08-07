@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(255, 251, 247);
+}
+
+.top-section {
+    text-align: left;
+}
+
+.top-section .top-container {
+    padding: 50px 50px 200px 50px;
+    width: 100%;
+}
+
+.top-section h4 {
+    font-family: 'Quattrocento', serif;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 15px;
+    color: #f26d53;
+    padding: 15px 0;
+}
+
+.top-section h2 {
+    font-size: 65px;
+    padding: 15px 100px 0 0;
+    letter-spacing: 3px;
+}
+
+section.news {
+    position: relative;
+    width: 100%;
+
+}
+
+section.news .news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    padding: 10px;
+}
+
+section.news .news-container .card-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+section.news .news-container .card-wrapper .card-img {
+    height: 400px;
+}
+
+section.news .news-container .card-wrapper .card-details {
+    padding: 10px;
+}
+
+section.news .news-container .card-wrapper .card-details h3 {
+    font-size: 30px;
+    color:#FF908D;
+    
+    
+}
+
+section.news .news-container .card-wrapper .card-details p {
+    font-size: 18px;
+}
+  
+  /* Tablets */
+  @media only screen and (max-width: 960px) {
+    
+  }
+  
+  /* Phones */
+  @media only screen and (max-width: 767px) {
+    
+  }
