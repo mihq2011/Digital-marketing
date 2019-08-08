@@ -43,6 +43,7 @@ section.news .news-container {
 section.news .news-container .card-wrapper {
     width: 100%;
     text-align: center;
+    background-color: white;
 }
 
 section.news .news-container .card-wrapper .card-img {
@@ -53,10 +54,14 @@ section.news .news-container .card-wrapper .card-details {
     padding: 10px;
 }
 
+section.news .news-container .card-wrapper .card-details .date {
+    color: #f26d53;
+    font-size: 14px;
+}
+
 section.news .news-container .card-wrapper .card-details h3 {
-    font-size: 30px;
-    color:#FF908D;
-    
+    font-size: 25px;
+    padding: 10px;
     
 }
 

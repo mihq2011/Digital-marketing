@@ -256,7 +256,7 @@
 
   footer .footer-text {
   display:inline-block;
-  padding: 35px;
+  padding: 65px 0 0 45px;
   color: white;
   font-size: 25px;
 }
@@ -265,7 +265,7 @@ footer .footer-btn {
   display: inline-block;
   text-transform: uppercase;
   float: right;
-  padding: 23px 10px 0 0;
+  padding: 65px 45px 0 0;
 }
 
 footer .footer-btn a {
