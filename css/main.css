@@ -432,17 +432,18 @@ footer .footer-btn a:hover {
   }
 
   /* Phones */
-  @media screen and (max-width: 414px) {
-    .social-links {
+@media screen and (max-width: 414px) {
+  
+  .social-links {
       bottom: 15%;
   }
 
-  .social-icon {
+.social-icon {
     left:26%;
     bottom: 210px;
   }
 
-  .sidebar .menu {
+.sidebar .menu {
     margin-top: 15vh;
 }
 
@@ -460,3 +461,9 @@ footer .footer-btn {
 }
 
   }
+
+
+  #experience {
+    position: relative;
+    padding: 90px 0;
+}

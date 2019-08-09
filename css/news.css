@@ -44,10 +44,25 @@ section.news .news-container .card-wrapper {
     width: 100%;
     text-align: center;
     background-color: white;
+    cursor: pointer;
+   
+}
+
+section.news .news-container .card-wrapper:hover .card-details h3 {
+    color: #f26d53;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    
 }
 
 section.news .news-container .card-wrapper .card-img {
     height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section.news .news-container .card-wrapper .card-details {
