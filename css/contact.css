@@ -1,11 +1,13 @@
+body {
+    color: #424243;
+}
 .top-section {
     background-color: rgb(255, 251, 247);
     text-align: left;
-    height: 50vh;
 }
 
 .top-section .top-container {
-    padding: 150px 0 0 50px;
+    padding: 150px 0 100px 50px;
     width: 60%;
 }
 
@@ -31,7 +33,70 @@
 }
 
 .top-section .top-container .btn {
-    padding: 15px;
+    padding: 12px;
     display: inline-block;
-    border: solid 2px #f26d53;
+    border: solid 1px #f26d53;
+    transition: .5s;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 0 15px 15px 0;
+}
+
+.top-section .top-container .btn:hover {
+    background: #f26d53;
+    cursor: pointer;
+
+}
+
+.contact .contact-wrapper {
+    padding: 0 10px 0 50px;
+    display: grid;
+    grid-template-columns: 35% 75%;
+    background: #424243;
+    color: white;
+}
+
+.contact .contact-wrapper .contact-info {
+    font-size: 16px;
+    font-weight: 600;
+    display: inline;
+    padding-top: 50px;
+    
+}
+
+.contact .contact-wrapper .contact-info h3{
+    font-weight: 800;
+    font-size: 40px;
+    padding: 0 0 20px 0;
+}
+
+.contact .contact-wrapper .contact-info .address{
+    padding: 0 0 20px 0;
+}
+
+.contact .contact-wrapper .contact-info .phoneno{
+    padding: 0 0 20px 0;
+}
+
+.contact .contact-wrapper .contact-info .directions .btn{
+    border: solid 1px #f26d53;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: .5s;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.contact .contact-wrapper .contact-info .directions .btn:hover{
+    background: #f26d53;
+    cursor: pointer;
+}
+
+.contact .contact-wrapper .map-wrapper {
+    width: 100%;
+}
+
+.contact .contact-wrapper .map-wrapper #map{
+    height: 500px;
+    width: 100%;
 }
