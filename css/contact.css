@@ -100,3 +100,24 @@ body {
     height: 500px;
     width: 100%;
 }
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .top-section .top-container {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .contact .contact-wrapper {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+    
+}
+  
+  /* Phones */
+  @media screen and (max-width: 414px) {
+  
+  
+  }
+  
