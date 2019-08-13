@@ -12,7 +12,7 @@
     font-family: 'Quattrocento', serif;
     text-transform: uppercase;
     letter-spacing: 7px;
-    font-size: 15px;
+    font-size: 12px;
     color: #f26d53;
     padding: 15px 0;
 }
@@ -90,12 +90,16 @@ section.gallery .gallery-container .gallery-item h2 {
 /* Phones */
 @media screen and (max-width: 414px) {
 
-  section.gallery .gallery-container {
+section.gallery .gallery-container {
     grid-template-columns: 1fr;
 }
 
 .top-section .top-container {
-  padding: 45px 0 0 10px;
+  padding: 100px 5px;
+}
+
+.top-section h4 {
+  padding: 30px 0;
 }
 
 .top-section h2 {

@@ -104,7 +104,7 @@ body {
 /* Tablets */
 @media screen and (max-width: 768px) {
     .top-section .top-container {
-        padding: 5px;
+        padding: 100px 5px 50px 5px;
         width: 100%;
     }
 
@@ -112,12 +112,18 @@ body {
         grid-template-columns: 1fr;
         padding: 5px;
     }
+
+    .contact .contact-wrapper .contact-info {
+        padding: 100px 5px 50px 5px;
+    }
     
 }
   
   /* Phones */
   @media screen and (max-width: 414px) {
-  
+    .contact .contact-wrapper .phoneno span {
+        display: -webkit-box;
+    }
   
   }
   
